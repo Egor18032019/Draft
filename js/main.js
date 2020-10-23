@@ -3,8 +3,9 @@ const fetch = require('node-fetch');
 const fs = require('fs');
 
 // replace the value below with the Telegram token you receive from @BotFather
-const token = 'secret token';
-
+const token = '1253154776:AAGGzQ7BYnzNdYMtd-kqboQD0lkKyD2VhZ8';
+https://yourwebhookserver.com/1253154776:AAGGzQ7BYnzNdYMtd-kqboQD0lkKyD2VhZ8
+https://api.telegram.org/bot1253154776:AAGGzQ7BYnzNdYMtd-kqboQD0lkKyD2VhZ8/getUpdates
 // Create a bot that uses 'polling' to fetch new updates
 // Создаем бота, который использует 'опрос' для получения новых обновлений
 const bot = new TelegramBot(token, {
