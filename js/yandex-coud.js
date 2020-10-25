@@ -341,7 +341,6 @@ module.exports.bot = async (event) => {
         console.log(`---body.message.contact---` + JSON.stringify(body.message.contact))
         phone = body.message.contact && body.message.contact.phone_number;
       }
-
       if (body.message.sticker) {
         console.log(`---стикер` + JSON.stringify(body.message.sticker))
         botMsg = `Стикерами не питаюсь`
