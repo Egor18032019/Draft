@@ -64,7 +64,6 @@
   };
   var onError = function (errorMessage) {
     console.log(errorMessage)
-
   }
 
   var onLoadForm = () => {
@@ -73,12 +72,28 @@
 
  var updateSheet = (dsd)=>{
    console.log(dsd)
+}
 
-  console.log(`dsdsdsdsdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa`)
+
+const AUDIO = [
+  "https://storage.yandexcloud.net/img-bot-bucket/tg-bot-audio/Defend Castle.mp3",
+ "https://storage.yandexcloud.net/img-bot-bucket/tg-bot-audio/Win Battle.mp3",
+ "https://storage.yandexcloud.net/img-bot-bucket/tg-bot-audio/LoseCombat.mp3",
+ "https://storage.yandexcloud.net/img-bot-bucket/tg-bot-audio/Surrender Battle.mp3",
+]
+
+var randObj = (obj) => {
+  const rand = Math.floor(Math.random() * obj.length);
+  console.log(rand)
+  console.log(obj.value)
+
+  return obj[1]
 }
 
   var onSaveForm = () => {
-    console.log(`data`)
+    var audioUrl = randObj(AUDIO);
+
+    console.log(audioUrl)
     updateSheet(`dsdasdasds`);
   }
   var loadingButton = document.querySelector('.load-open');
@@ -89,7 +104,7 @@
     load: load,
     save: save,
     updateSheet: updateSheet,
-
+    onLoadForm:onLoadForm
   };
 })();
 
